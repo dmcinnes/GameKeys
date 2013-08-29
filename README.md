@@ -71,4 +71,3 @@ If you can go for it. Some games need something continously happening as a key i
 
 
 Enjoy!
-Doug McInnes
