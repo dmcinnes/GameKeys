@@ -5,8 +5,12 @@ Easily examine the current Keyboard state in your HTML5 Games.
 
 Example:
 
+    // inside your game loop...
+
     if (GameKeys.status.space) {
-      MyGame.fireMissile();
+      SpaceShip.thrust = 100;
+    } else {
+      SpaceShip.thrust = 0;
     }
      
     
@@ -55,5 +59,16 @@ Register callbacks on a particular key:
       console.log("return released");
     });
     
+    
+    
+### Why not just use keydown event handlers?
+
+If you can go for it. Some games need something continously happening as a key is held down. Some examples:
+
+* On a side scroller you may want your guy to jump higher the longer the jump key is held down.
+* A spaceship should only turn as long as the key is held down.
+* A car should only accelerate as long as the up arrow is pressed.
+
+
 Enjoy!
 Doug McInnes
